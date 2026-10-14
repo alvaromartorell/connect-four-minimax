@@ -256,7 +256,6 @@ void jugar4eR(int Tauler[N][N],int victoria,int turno, int PF){
         Node arrel;
         arrel.niv=0;
         arrel.fills=malloc(N*sizeof(Node*));
-        printf("\n\nERROR 1\n\n");
         arrel.n_fills=N;
         inicializarTauler(arrel.tauler);
 
@@ -269,11 +268,9 @@ void jugar4eR(int Tauler[N][N],int victoria,int turno, int PF){
         crearArbre(&arrel,PF);
 
         double MEJOR_VALOR = minimax(&arrel,0,PF);
-        printf("\n\nMejor valor es: %f\n",MEJOR_VALOR);
 
         Node *jugadaIA = minimaxSeleccionarMejorHijo(&arrel,0,PF);
 
-        printf("\n\nMejor valor es: %f\n",jugadaIA->valor);
         if (jugadaIA == NULL) {
             printf("Error: No se encontr� una jugada para la IA.\n");
             break;
@@ -327,11 +324,9 @@ void jugar4eR(int Tauler[N][N],int victoria,int turno, int PF){
         crearArbre(&arrel,PF);
 
         double MEJOR_VALOR = minimax(&arrel,0,PF);
-        printf("\n\nMejor valor es: %f\n",MEJOR_VALOR);
 
         Node *jugadaIA = minimaxSeleccionarMejorHijo(&arrel,0,PF);
 
-        printf("\n\nMejor valor es: %f\n",jugadaIA->valor);
 
         if (jugadaIA == NULL) {
             printf("Error: No se encontró una jugada para la IA.\n");
