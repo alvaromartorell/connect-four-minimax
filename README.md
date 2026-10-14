@@ -2,8 +2,6 @@
 
 Implementation of the classic **Connect Four** game in **C**, played on an 8×8 board in the terminal against an AI opponent based on the **Minimax algorithm**.
 
-This project was developed as part of the **Advanced Programming** course during my Bachelor's Degree in Mathematics. The objective was to implement an adversarial search algorithm capable of making intelligent decisions in a deterministic two-player game.
-
 ---
 
 ## Overview
@@ -117,6 +115,3 @@ A small random value is added to break ties between otherwise equivalent positio
 ## Author
 
 Álvaro Martorell Ortuño
-
-B.Sc. in Mathematics  
-Universitat Autònoma de Barcelona
